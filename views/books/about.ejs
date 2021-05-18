@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../head.ejs') %>
+
+</head>
+<body>
+    <header>
+        <span id="logo">
+            <a href="/">Bookstore</a>
+        </span>
+    </header>
+
+    <div class="container">
+        <div id="books">
+            <span id="route"><%= title %></span>
+            <ul id="links">
+                <li><a href="/books">Home</a></li>
+                <li><a href="/books/about" class="active">About</a></li>
+                <li><a href="/books/create" >Create a Book</a></li>
+            </ul>
+        </div>
+
+        <div id="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis temporibus, tenetur aut libero quibusdam rem repudiandae, eligendi necessitatibus provident voluptate molestias veniam repellendus nesciunt neque quis minus nostrum rerum perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolor facere magnam officia hic eligendi amet a exercitationem veniam explicabo, unde neque quas quisquam voluptatum beatae dolores. Aliquam, adipisci magnam! </p>
+        </div>
+    </div>
+    
+    <%- include('../footer.ejs') %>
+
+
+</body>
+</html>

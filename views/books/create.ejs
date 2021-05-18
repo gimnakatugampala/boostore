@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../head.ejs') %>
+</head>
+<body>
+    <header>
+        <span id="logo">
+            <a href="/">Bookstore</a>
+        </span>
+    </header>
+
+    <div class="container">
+        <div id="books">
+            <span id="route"><%= title %></span>
+            <ul id="links">
+                <li><a href="/books">Home</a></li>
+                <li><a href="/books/about">About</a></li>
+                <li><a href="/books/create" class="active">Create a Book</a></li>
+            </ul>
+        </div>       
+        <div id="create">
+            <form action="/books" method="POST">
+                <input type="text" name="book" placeholder="Enter Book">
+                <input type="text" name="author" placeholder="Enter Author Name">
+                <input type="number" name="price" placeholder="Enter Price">
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include('../footer.ejs') %>
+
+</body>
+</html>

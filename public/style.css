@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: rgb(199, 197, 197);
+    color: rgb(51, 45, 45);
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    margin-top: 70px;
+}
+
+.active{
+    color: blue;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(51, 45, 45);
+}
+
+#logo{
+    font-weight: 800;
+    padding: 30px;
+    font-size: 40px;
+    margin: 20px;
+}
+
+#books{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid blue;
+    margin-bottom: 20px;
+}
+
+#route{
+    font-size: 30px;
+}
+
+#links{
+    list-style: none;
+}
+
+#links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+table{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+th,td{
+    border: 2px solid rgb(51, 45, 45);
+    padding: 20px;
+}
+
+
+input{
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 9px;
+}
+
+button{
+    padding: 10px;
+    color: #fff;
+    background: blue;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.not{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.go{
+    background: blue;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 430px;
+    text-align: center;
+}
+
+#delete{
+    float: right;
+    background: crimson;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media(max-width:900px){
+    .go{
+        margin-left: 390px;
+    }
+}

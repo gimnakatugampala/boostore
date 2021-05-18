@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../head.ejs') %>
+
+</head>
+<body>
+    <header>
+        <span id="logo">
+            <a href="/">Bookstore</a>
+        </span>
+    </header>
+
+    <div class="container">
+        <div id="books">
+            <span id="route"><%= title %></span>
+            <ul id="links">
+                <li><a href="/books" class="active">Home</a></li>
+                <li><a href="/books/about">About</a></li>
+                <li><a href="/books/create" >Create a Book</a></li>
+            </ul>
+        </div>
+
+        <table>
+            <tr>
+                <th>#ISBN</th>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Price (Rs.)</th>
+            </tr>
+            <% if(books.length > 0){ %>
+            <% books.forEach(book =>{ %>
+            <tr>
+                <td><%= book._id %></td>
+                <td><a href="/books/<%= book._id%>"><%= book.book %></a></td>
+                <td><%= book.author %></td>
+                <td><%= book.price %>/=</td>
+            </tr>
+            <% }) %>
+            <% }else{ %>
+                <h3>No Books Available..</h3>
+            <% } %>
+        </table>
+    </div>
+
+    <%- include('../footer.ejs') %>
+
+    
+</body>
+</html>
