@@ -4,7 +4,6 @@ const bookRouter = require('./router/bookRouter')
 
 const app = express()
 
-const db = 'mongodb+srv://Gimna:9922557gimna@nodetuts.qlhc3.mongodb.net/bookstore?retryWrites=true&w=majority';
 mongoose.connect(db,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(() => app.listen(3000))
 .catch(err => console.log(err)) 
